@@ -1,0 +1,178 @@
+
+
+        :root {
+            --main-bg-color: #e19d6c;
+            --main-text-color: #003d30;
+            --second-text-color: #6c757d;
+            --second-bg-color: #e19d6c;
+            --card-bg: #ffffff;
+            --card-shadow: rgba(0, 0, 0, 0.2);
+        }
+
+        .primary-text {
+            color: var(--main-text-color);
+        }
+
+        .second-text {
+            color: var(--second-text-color);
+        }
+
+        .primary-bg {
+            background-color: var(--main-bg-color);
+        }
+
+        .secondary-bg {
+            background-color: var(--second-bg-color);
+        }
+
+        .rounded-full {
+            border-radius: 100%;
+        }
+
+        #wrapper {
+            overflow-x: hidden;
+        }
+
+        #sidebar-wrapper {
+            min-height: 100vh;
+            margin-left: -15rem;
+            transition: margin 0.25s ease-out;
+        }
+
+        #sidebar-wrapper .sidebar-heading {
+            padding: 1rem;
+            font-size: 1.5rem;
+            background: var(--main-bg-color);
+            color: #fff;
+        }
+
+        #sidebar-wrapper .list-group {
+            width: 15rem;
+        }
+
+        #page-content-wrapper {
+            min-width: 100vw;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: 0;
+        }
+
+        #menu-toggle {
+            cursor: pointer;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 20px 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .list-group-item.active {
+            background-color: transparent;
+            color: var(--main-text-color);
+            font-weight: bold;
+            border: none;
+        }
+
+        .card {
+            box-shadow: 0 4px 20px var(--card-shadow);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .table {
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .table th, .table td {
+            border: none;
+        }
+
+        .table thead th {
+            background-color: var(--second-bg-color);
+        }
+
+        .availability-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .availability-btn {
+            border-radius: 20px;
+            padding: 15px 40px;
+            font-size: 20px;
+            width: 500px;
+        }
+
+        .stat-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+            color: #333;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(245, 110, 110, 0.15);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            opacity: 0.8;
+        }
+
+        .duration-btn {
+            margin: 5px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+                .fs-5 {
+                    margin: 0;
+                }
+        .btn-group .btn {
+            border-radius: 50px; /* More rounded corners */
+            padding: 10px 20px; /* Add padding for a better feel */
+            font-weight: 600; /* Make the text bold */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+
+        /* Add hover effects */
+        .btn-group .btn:hover {
+            background-color: #da983a; /* Change background on hover */
+            color: #fff; /* Change text color on hover */
+        }
+
+        /* Highlight active button */
+        .btn-group .btn.active {
+            background-color: #da983a; /* Darker shade for active button */
+            color: #fff; /* White text for active button */
+        }
+        @media (min-width: 768px) {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+
+            #page-content-wrapper {
+                min-width: 0;
+                width: 100%;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                margin-left: -15rem;
+            }
+        }

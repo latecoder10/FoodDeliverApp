@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container to center content */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Center-align headings */
+h2 {
+    text-align: center;
+}
+
+/* Common styles for profile and restaurant info sections */
+.profile-info, .restaurant-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background for readability */
+}
+
+/* Label styling within profile and restaurant info */
+.profile-info label, .restaurant-info label {
+    font-weight: bold;
+}
+
+/* Paragraph styling within profile and restaurant info */
+.profile-info p, .restaurant-info p {
+    margin: 0;
+}
+
+/* Actions section styling */
+.actions {
+    text-align: center;
+}
+
+/* Links in actions section */
+.actions a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Hover effect for action links */
+.actions a:hover {
+    text-decoration: underline;
+}
+
+/* Form container styling */
+.form-container {
+    margin-top: 20px;
+}
+
+/* Styling for form inputs and selects */
+.form-container input, .form-container select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+/* Submit button styling */
+.form-container input[type="submit"] {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+    padding: 15px; /* More padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for submit button */
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add a basic responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .form-container input, .form-container select {
+        padding: 8px;
+    }
+    
+    .form-container input[type="submit"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

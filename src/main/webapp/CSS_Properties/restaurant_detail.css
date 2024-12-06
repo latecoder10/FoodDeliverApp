@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.underline {
+	height: 3px;
+	width: 100px;
+	background-color: #f7941d;
+}
+
+.img-fit {
+	max-width: 100%;
+	height: auto;
+}
+
+.bordered {
+	border: 1px solid #ddd;
+	padding: 10px;
+	border-radius: 4px; /* Optional: adds rounded corners */
+}
